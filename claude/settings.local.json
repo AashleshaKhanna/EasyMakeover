@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/Aashl/OneDrive/Documents/cursor_hackathon_ttw/.claude\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where python *)",
+      "Bash(where py *)",
+      "Bash(where node *)",
+      "Bash(where npx *)",
+      "Bash(curl -sI \"https://image.pollinations.ai/prompt/test?width=320&height=320&nologo=true&seed=1\" --max-time 30)",
+      "Bash(curl -sI \"https://image.pollinations.ai/prompt/editorial%20fashion%20photograph%2C%20wedding%2C%20masculine%2C%20tuxedo?width=640&height=896&nologo=true&model=flux&seed=1\" --max-time 60)",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(git config *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
