@@ -1,0 +1,44 @@
+/* EasyMakeover — small custom touches on top of Tailwind */
+
+html, body {
+  background: #fff7f2;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-serif {
+  letter-spacing: -0.01em;
+}
+
+/* Chips: a subtle press feel */
+.chip:active {
+  transform: scale(0.98);
+}
+
+/* Smooth entrance for cards and result section */
+@keyframes em-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+section, .group {
+  animation: em-rise 360ms ease-out both;
+}
+
+/* A gentler scrollbar on long pages */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb {
+  background: rgba(190, 100, 120, 0.25);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(190, 100, 120, 0.4);
+}
+
+/* Selection color that matches the brand */
+::selection {
+  background: #fecdd3;
+  color: #881337;
+}
